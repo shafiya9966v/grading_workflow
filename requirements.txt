@@ -1,0 +1,6 @@
+# No third-party dependencies: this project uses only the Python standard library
+# (sqlite3, csv, json, random, datetime, hashlib, argparse, dataclasses, re).
+# Requires Python 3.10 or newer.
+#
+# If you later add a package, list it here with a pinned version, for example:
+# pandas==2.2.2
