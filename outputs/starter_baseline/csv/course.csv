@@ -1,0 +1,21 @@
+course_id,course_code,title,instructor_ref,start_date,end_date,status
+CRS-2026-0001,PH101,Applied Data Structures,INS-0002,2026-03-18,2026-07-08,completed
+CRS-2026-0002,EE102,Applied Data Structures,INS-0002,2026-01-05,2026-04-06,completed
+CRS-2026-0003,EE103,Introduction to Machine Learning,INS-0002,2026-06-17,2026-09-23,completed
+CRS-2026-0004,DS104,Principles of Programming Fundamentals,INS-0005,2026-06-05,2026-09-04,completed
+CRS-2026-0005,DS105,Advanced Discrete Mathematics,INS-0001,2026-02-10,2026-05-19,completed
+CRS-2026-0006,CS106,Principles of Algorithms,INS-0001,2026-02-11,2026-05-13,completed
+CRS-2026-0007,EE107,Advanced Database Systems,INS-0002,2026-05-16,2026-09-05,completed
+CRS-2026-0008,CE108,Principles of Algorithms,INS-0004,2026-07-18,2026-11-07,active
+CRS-2026-0009,BA109,Principles of Human-Computer Interaction,INS-0002,2026-03-10,2026-06-02,completed
+CRS-2026-0010,CS110,Introduction to Software Engineering,INS-0005,2026-07-13,2026-10-05,completed
+CRS-2026-0011,EE111,Introduction to Cybersecurity,INS-0002,2026-02-25,2026-05-20,completed
+CRS-2026-0012,BA112,Introduction to Data Visualisation,INS-0001,2026-06-14,2026-09-27,completed
+CRS-2026-0013,PH113,Introduction to Discrete Mathematics,INS-0001,2026-07-17,2026-10-09,completed
+CRS-2026-0014,EE114,Advanced Human-Computer Interaction,INS-0005,2026-03-28,2026-06-20,completed
+CRS-2026-0015,PH115,Principles of Programming Fundamentals,INS-0001,2026-06-11,2026-09-03,completed
+CRS-2026-0016,CS116,Introduction to Data Structures,INS-0005,2026-06-02,2026-09-08,completed
+CRS-2026-0017,CS117,Advanced Digital Electronics,INS-0001,2026-05-16,2026-08-29,completed
+CRS-2026-0018,BA118,Applied Web Development,INS-0005,2026-06-24,2026-09-30,completed
+CRS-2026-0019,BA119,Advanced Web Development,INS-0005,2026-07-15,2026-10-21,active
+CRS-2026-0020,CE120,Advanced Cloud Computing,INS-0002,2026-08-02,2026-11-22,active

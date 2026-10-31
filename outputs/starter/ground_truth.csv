@@ -1,0 +1,11 @@
+anomaly_id,issue_type,record_table,record_id,expected_detection,injection_detail
+GT-0001,unenrolled_submission,submission,SUB-ASN-2026-000015-LRN-000071-01,The submission's learner has no enrollment in the assignment's course.,learner LRN-000071 is not enrolled in CRS-2026-0015
+GT-0002,unenrolled_submission,submission,SUB-ASN-2026-000035-LRN-000137-01,The submission's learner has no enrollment in the assignment's course.,learner LRN-000137 is not enrolled in CRS-2026-0018
+GT-0003,unenrolled_submission,submission,SUB-ASN-2026-000036-LRN-000148-01,The submission's learner has no enrollment in the assignment's course.,learner LRN-000148 is not enrolled in CRS-2026-0007
+GT-0004,grade_exceeds_max,grade,GRD-SUB-ASN-2026-000006-LRN-000291-01,A criterion score or the final score exceeds the rubric maximum.,RUB-ASN-2026-000006-01-C02 score 39 -> 46.5 (criterion max 40); final_score 101 > assignment max 100
+GT-0005,grade_exceeds_max,grade,GRD-SUB-ASN-2026-000028-LRN-000219-01,A criterion score or the final score exceeds the rubric maximum.,RUB-ASN-2026-000028-01-C03 score 31.5 -> 36 (criterion max 33.5); final_score 102 > assignment max 100
+GT-0006,grade_exceeds_max,grade,GRD-SUB-ASN-2026-000038-LRN-000190-01,A criterion score or the final score exceeds the rubric maximum.,RUB-ASN-2026-000038-01-C04 score 45 -> 51 (criterion max 45); final_score 101 > assignment max 100
+GT-0007,double_late_penalty,grade,GRD-SUB-ASN-2026-000006-LRN-000256-01,late_penalty_points is twice the value the late-penalty rule gives for this submission.,penalty points 11.7 -> 23.4 at 30% on raw 39
+GT-0008,double_late_penalty,grade,GRD-SUB-ASN-2026-000022-LRN-000294-01,late_penalty_points is twice the value the late-penalty rule gives for this submission.,penalty points 7.4 -> 14.8 at 20% on raw 37
+GT-0009,double_late_penalty,grade,GRD-SUB-ASN-2026-000046-LRN-000135-01,late_penalty_points is twice the value the late-penalty rule gives for this submission.,penalty points 11.4 -> 22.8 at 40% on raw 28.5
+GT-0010,appeal_without_audit,appeal,APP-2026-000010,"The appeal is upheld and the grade changed, but no appeal_adjustment grade_event exists for it.",removed EVT-2026-000830 (appeal_adjustment 19 -> 23)

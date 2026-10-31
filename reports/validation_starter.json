@@ -1,0 +1,471 @@
+{
+  "summary": {
+    "dataset": "outputs\\starter",
+    "row_counts": {
+      "course": 20,
+      "learner": 300,
+      "enrollment": 506,
+      "assignment": 50,
+      "rubric": 50,
+      "rubric_criterion": 200,
+      "submission": 800,
+      "resubmission": 86,
+      "submission_artifact": 1282,
+      "grade": 800,
+      "grade_criterion_score": 3214,
+      "feedback": 2120,
+      "appeal": 23,
+      "grade_event": 877
+    },
+    "checks_run": 39,
+    "checks_failed": 5,
+    "assertions_evaluated": 75698,
+    "findings": 11
+  },
+  "checks": [
+    {
+      "check": "pk_unique",
+      "group": "keys",
+      "description": "Primary keys are unique in every table",
+      "checked": 10328,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "id_format",
+      "group": "keys",
+      "description": "IDs follow the required zero-padded formats",
+      "checked": 7114,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "id_embeds_parent",
+      "group": "keys",
+      "description": "Child IDs embed their parent IDs exactly",
+      "checked": 5844,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "fk_valid",
+      "group": "joins",
+      "description": "Every foreign key points to an existing parent row",
+      "checked": 15925,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "enum_valid",
+      "group": "values",
+      "description": "Status and type columns hold allowed values only",
+      "checked": 7776,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "timestamp_format",
+      "group": "values",
+      "description": "All *_utc columns are ISO-8601 UTC ending in Z",
+      "checked": 6538,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "due_time_timezone",
+      "group": "values",
+      "description": "Due time is 23:59 India time and the zone is recorded",
+      "checked": 50,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "course_dates",
+      "group": "dates",
+      "description": "Course start is not after its end",
+      "checked": 20,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "assignment_dates",
+      "group": "dates",
+      "description": "Publish precedes due date, both inside the course dates",
+      "checked": 50,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "rubric_effective",
+      "group": "dates",
+      "description": "Rubric is effective no later than publication",
+      "checked": 50,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "enrollment_dates",
+      "group": "dates",
+      "description": "Enrollment dates and status are consistent",
+      "checked": 506,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "submission_after_publish",
+      "group": "dates",
+      "description": "A submission is not made before publication",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "is_late_consistent",
+      "group": "dates",
+      "description": "is_late and hours_late agree with the timestamps",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "grade_after_submission",
+      "group": "dates",
+      "description": "A grade is released after the submission",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "artifact_time",
+      "group": "dates",
+      "description": "Artifact upload time equals the (re)submission time",
+      "checked": 1282,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "feedback_after_grade",
+      "group": "dates",
+      "description": "Feedback is created at or after grading",
+      "checked": 2120,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "event_times",
+      "group": "dates",
+      "description": "Initial event matches grading time; later events come after it",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "resubmission_dates",
+      "group": "dates",
+      "description": "Resubmission requested within 7 days of grade release, in order",
+      "checked": 86,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "appeal_dates",
+      "group": "dates",
+      "description": "Appeal filed within 7 days of grade release, decided after filing",
+      "checked": 23,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "rubric_total",
+      "group": "arithmetic",
+      "description": "Criterion maxima add up to the rubric total and assignment maximum",
+      "checked": 50,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "grade_scores_complete",
+      "group": "arithmetic",
+      "description": "A grade has one score for each criterion of its rubric",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "criterion_score_nonnegative",
+      "group": "arithmetic",
+      "description": "Criterion scores are not negative",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "grade_raw_total",
+      "group": "arithmetic",
+      "description": "raw_total equals the sum of criterion scores",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "late_penalty_pct_rule",
+      "group": "arithmetic",
+      "description": "Penalty % follows the late rule, computed from timestamps",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "late_penalty_points_rule",
+      "group": "arithmetic",
+      "description": "Penalty points equal raw_total x penalty % (applied once)",
+      "checked": 800,
+      "failed": 3,
+      "status": "FAIL"
+    },
+    {
+      "check": "grade_final",
+      "group": "arithmetic",
+      "description": "final_score equals raw_total minus penalty points",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "grade_within_rubric_max",
+      "group": "arithmetic",
+      "description": "No score exceeds its criterion maximum or the assignment maximum",
+      "checked": 800,
+      "failed": 3,
+      "status": "FAIL"
+    },
+    {
+      "check": "resubmission_cap",
+      "group": "arithmetic",
+      "description": "Resubmission-improved criterion scores respect the 80% cap",
+      "checked": 60,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "submission_learner_enrolled",
+      "group": "lifecycle",
+      "description": "The submitting learner is enrolled in the course at that time",
+      "checked": 800,
+      "failed": 3,
+      "status": "FAIL"
+    },
+    {
+      "check": "submission_status_vs_grade",
+      "group": "lifecycle",
+      "description": "Submission status matches whether it has a grade",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "grade_status_vs_submission",
+      "group": "lifecycle",
+      "description": "Final / revised grade statuses match the history",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "event_chain",
+      "group": "lifecycle",
+      "description": "Grade events chain together and end at the current grade",
+      "checked": 800,
+      "failed": 1,
+      "status": "FAIL"
+    },
+    {
+      "check": "event_links",
+      "group": "lifecycle",
+      "description": "Events reference the right appeal or resubmission",
+      "checked": 877,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "one_route",
+      "group": "lifecycle",
+      "description": "At most one resubmission or appeal, never both",
+      "checked": 800,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "resubmission_policy",
+      "group": "lifecycle",
+      "description": "Resubmission only when allowed and the score was below 60%",
+      "checked": 86,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "resubmission_status",
+      "group": "lifecycle",
+      "description": "Resubmission status matches its dates, files and regrade event",
+      "checked": 86,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "appeal_status",
+      "group": "lifecycle",
+      "description": "Appeal status matches its decision fields",
+      "checked": 46,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "appeal_audit_trail",
+      "group": "lifecycle",
+      "description": "An upheld appeal has exactly one matching audit event",
+      "checked": 23,
+      "failed": 1,
+      "status": "FAIL"
+    },
+    {
+      "check": "no_duplicate_natural_keys",
+      "group": "duplicates",
+      "description": "No duplicate enrollments, submissions, rubrics, emails or files",
+      "checked": 3958,
+      "failed": 0,
+      "status": "PASS"
+    }
+  ],
+  "scoring": {
+    "ground_truth_rows": 10,
+    "per_type": {
+      "appeal_without_audit": {
+        "expected": 1,
+        "flagged": 1,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "double_late_penalty": {
+        "expected": 3,
+        "flagged": 3,
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "grade_exceeds_max": {
+        "expected": 3,
+        "flagged": 3,
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "unenrolled_submission": {
+        "expected": 3,
+        "flagged": 3,
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "unexpected_findings": []
+  },
+  "findings": [
+    {
+      "check": "late_penalty_points_rule",
+      "table": "grade",
+      "record_id": "GRD-SUB-ASN-2026-000006-LRN-000256-01",
+      "submission_id": "SUB-ASN-2026-000006-LRN-000256-01",
+      "issue_type": "double_late_penalty",
+      "message": "penalty points are 23.4 but the rule gives 11.7 (twice the expected value: penalty applied twice)"
+    },
+    {
+      "check": "grade_within_rubric_max",
+      "table": "grade",
+      "record_id": "GRD-SUB-ASN-2026-000006-LRN-000291-01",
+      "submission_id": "SUB-ASN-2026-000006-LRN-000291-01",
+      "issue_type": "grade_exceeds_max",
+      "message": "RUB-ASN-2026-000006-01-C02 score 46.5 > max 40; raw_total 101 > assignment max 100; final_score 101 > assignment max 100"
+    },
+    {
+      "check": "late_penalty_points_rule",
+      "table": "grade",
+      "record_id": "GRD-SUB-ASN-2026-000022-LRN-000294-01",
+      "submission_id": "SUB-ASN-2026-000022-LRN-000294-01",
+      "issue_type": "double_late_penalty",
+      "message": "penalty points are 14.8 but the rule gives 7.4 (twice the expected value: penalty applied twice)"
+    },
+    {
+      "check": "grade_within_rubric_max",
+      "table": "grade",
+      "record_id": "GRD-SUB-ASN-2026-000028-LRN-000219-01",
+      "submission_id": "SUB-ASN-2026-000028-LRN-000219-01",
+      "issue_type": "grade_exceeds_max",
+      "message": "RUB-ASN-2026-000028-01-C03 score 36 > max 33.5; raw_total 102 > assignment max 100; final_score 102 > assignment max 100"
+    },
+    {
+      "check": "grade_within_rubric_max",
+      "table": "grade",
+      "record_id": "GRD-SUB-ASN-2026-000038-LRN-000190-01",
+      "submission_id": "SUB-ASN-2026-000038-LRN-000190-01",
+      "issue_type": "grade_exceeds_max",
+      "message": "RUB-ASN-2026-000038-01-C04 score 51 > max 45; raw_total 101 > assignment max 100; final_score 101 > assignment max 100"
+    },
+    {
+      "check": "late_penalty_points_rule",
+      "table": "grade",
+      "record_id": "GRD-SUB-ASN-2026-000046-LRN-000135-01",
+      "submission_id": "SUB-ASN-2026-000046-LRN-000135-01",
+      "issue_type": "double_late_penalty",
+      "message": "penalty points are 22.8 but the rule gives 11.4 (twice the expected value: penalty applied twice)"
+    },
+    {
+      "check": "submission_learner_enrolled",
+      "table": "submission",
+      "record_id": "SUB-ASN-2026-000015-LRN-000071-01",
+      "submission_id": "SUB-ASN-2026-000015-LRN-000071-01",
+      "issue_type": "unenrolled_submission",
+      "message": "learner LRN-000071 has no enrollment in CRS-2026-0015"
+    },
+    {
+      "check": "submission_learner_enrolled",
+      "table": "submission",
+      "record_id": "SUB-ASN-2026-000035-LRN-000137-01",
+      "submission_id": "SUB-ASN-2026-000035-LRN-000137-01",
+      "issue_type": "unenrolled_submission",
+      "message": "learner LRN-000137 has no enrollment in CRS-2026-0018"
+    },
+    {
+      "check": "submission_learner_enrolled",
+      "table": "submission",
+      "record_id": "SUB-ASN-2026-000036-LRN-000148-01",
+      "submission_id": "SUB-ASN-2026-000036-LRN-000148-01",
+      "issue_type": "unenrolled_submission",
+      "message": "learner LRN-000148 has no enrollment in CRS-2026-0007"
+    },
+    {
+      "check": "event_chain",
+      "table": "grade",
+      "record_id": "GRD-SUB-ASN-2026-000018-LRN-000224-01",
+      "submission_id": "SUB-ASN-2026-000018-LRN-000224-01",
+      "issue_type": null,
+      "message": "latest event says 19.0 but the grade is 23.0: grade changed without history"
+    },
+    {
+      "check": "appeal_audit_trail",
+      "table": "appeal",
+      "record_id": "APP-2026-000010",
+      "submission_id": "SUB-ASN-2026-000018-LRN-000224-01",
+      "issue_type": "appeal_without_audit",
+      "message": "appeal upheld and the grade changed, but there is no matching appeal_adjustment event"
+    }
+  ]
+}

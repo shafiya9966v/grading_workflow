@@ -1,0 +1,247 @@
+{
+  "scale": "starter",
+  "seed": 20261022,
+  "result": "PASS",
+  "checks": {
+    "row counts identical across runs": true,
+    "every file checksum identical across runs": true,
+    "manifest.json identical across runs": true,
+    "dataset fingerprint identical": true,
+    "control run with another seed differs (so the comparison is meaningful)": true
+  },
+  "files_compared": 31,
+  "files_identical": 31,
+  "dataset_fingerprint_run1": "2806a4c142016a8ecd51bb1d01fc267bad9c4f8a52d2b7d28a493be5ffdba623",
+  "dataset_fingerprint_run2": "2806a4c142016a8ecd51bb1d01fc267bad9c4f8a52d2b7d28a493be5ffdba623",
+  "row_counts": {
+    "appeal": {
+      "run1": 23,
+      "run2": 23,
+      "match": true
+    },
+    "assignment": {
+      "run1": 50,
+      "run2": 50,
+      "match": true
+    },
+    "course": {
+      "run1": 20,
+      "run2": 20,
+      "match": true
+    },
+    "enrollment": {
+      "run1": 506,
+      "run2": 506,
+      "match": true
+    },
+    "feedback": {
+      "run1": 2120,
+      "run2": 2120,
+      "match": true
+    },
+    "grade": {
+      "run1": 800,
+      "run2": 800,
+      "match": true
+    },
+    "grade_criterion_score": {
+      "run1": 3214,
+      "run2": 3214,
+      "match": true
+    },
+    "grade_event": {
+      "run1": 877,
+      "run2": 877,
+      "match": true
+    },
+    "learner": {
+      "run1": 300,
+      "run2": 300,
+      "match": true
+    },
+    "resubmission": {
+      "run1": 86,
+      "run2": 86,
+      "match": true
+    },
+    "rubric": {
+      "run1": 50,
+      "run2": 50,
+      "match": true
+    },
+    "rubric_criterion": {
+      "run1": 200,
+      "run2": 200,
+      "match": true
+    },
+    "submission": {
+      "run1": 800,
+      "run2": 800,
+      "match": true
+    },
+    "submission_artifact": {
+      "run1": 1282,
+      "run2": 1282,
+      "match": true
+    }
+  },
+  "control_seed": 20261023,
+  "control_files_different": 31,
+  "files": {
+    "csv/appeal.csv": {
+      "run1": "8212d9913d23bc12c6bcda49a4481fbf6318aee58833eeab702e8a00a1adea75",
+      "run2": "8212d9913d23bc12c6bcda49a4481fbf6318aee58833eeab702e8a00a1adea75",
+      "match": true
+    },
+    "csv/assignment.csv": {
+      "run1": "082694b61c9e7c28a26ca06ec8aa7a00376bd744629b063c8626870926fddfa7",
+      "run2": "082694b61c9e7c28a26ca06ec8aa7a00376bd744629b063c8626870926fddfa7",
+      "match": true
+    },
+    "csv/course.csv": {
+      "run1": "d506fed8e25c6296cfc1cd00a828783a436fdbba4dcd197fba3d0e7269a52c43",
+      "run2": "d506fed8e25c6296cfc1cd00a828783a436fdbba4dcd197fba3d0e7269a52c43",
+      "match": true
+    },
+    "csv/enrollment.csv": {
+      "run1": "3b9e867c44ec9528441d860a4528ce12c4c1f92f9545c2813a0381b902d7ff35",
+      "run2": "3b9e867c44ec9528441d860a4528ce12c4c1f92f9545c2813a0381b902d7ff35",
+      "match": true
+    },
+    "csv/feedback.csv": {
+      "run1": "d4301769d25c66071f59947e0a1b76e77a6f8c730cb60e847d84f2780867ccbb",
+      "run2": "d4301769d25c66071f59947e0a1b76e77a6f8c730cb60e847d84f2780867ccbb",
+      "match": true
+    },
+    "csv/grade.csv": {
+      "run1": "1a9c6f1dd1f82cd304585badec62a63b5a8c10954ea7fe52e713ccb99072416e",
+      "run2": "1a9c6f1dd1f82cd304585badec62a63b5a8c10954ea7fe52e713ccb99072416e",
+      "match": true
+    },
+    "csv/grade_criterion_score.csv": {
+      "run1": "f4177af538d78c706b1b4edd89279feae68f8f0552384da64ffdd43897042380",
+      "run2": "f4177af538d78c706b1b4edd89279feae68f8f0552384da64ffdd43897042380",
+      "match": true
+    },
+    "csv/grade_event.csv": {
+      "run1": "77f4838723bb93ce52c8c61af44a86bd4bee385437c30c2614c72127acb7762c",
+      "run2": "77f4838723bb93ce52c8c61af44a86bd4bee385437c30c2614c72127acb7762c",
+      "match": true
+    },
+    "csv/learner.csv": {
+      "run1": "4a3f2820591bdbee4149091294de8813f89caea96967fc254b52126491456b53",
+      "run2": "4a3f2820591bdbee4149091294de8813f89caea96967fc254b52126491456b53",
+      "match": true
+    },
+    "csv/resubmission.csv": {
+      "run1": "13df99cd5a0fbd5fcc19a5e7e884e94b2d410a38386810961c96dc3e2f199119",
+      "run2": "13df99cd5a0fbd5fcc19a5e7e884e94b2d410a38386810961c96dc3e2f199119",
+      "match": true
+    },
+    "csv/rubric.csv": {
+      "run1": "66753ac947c4f77c5a2827fcf05a14c57ffb77ecbb83a43ac15ddce7fcca514f",
+      "run2": "66753ac947c4f77c5a2827fcf05a14c57ffb77ecbb83a43ac15ddce7fcca514f",
+      "match": true
+    },
+    "csv/rubric_criterion.csv": {
+      "run1": "32b5f984cb129561ad348b1eee1179b3bbf3d431e0ae0848ae27b4a6c9dfa024",
+      "run2": "32b5f984cb129561ad348b1eee1179b3bbf3d431e0ae0848ae27b4a6c9dfa024",
+      "match": true
+    },
+    "csv/submission.csv": {
+      "run1": "8a6c5a48ecda8da6f995993e90d505b02d46afa3a6889586ed9be28f4b5ce0fc",
+      "run2": "8a6c5a48ecda8da6f995993e90d505b02d46afa3a6889586ed9be28f4b5ce0fc",
+      "match": true
+    },
+    "csv/submission_artifact.csv": {
+      "run1": "ff39a9233f71405fd02866d2e46b5d5eab1f7b853248034e3df109af4c0a56e0",
+      "run2": "ff39a9233f71405fd02866d2e46b5d5eab1f7b853248034e3df109af4c0a56e0",
+      "match": true
+    },
+    "ground_truth.csv": {
+      "run1": "098a4fb1d13aa0b941ccf5aabc95f51fedf9b6979cbf95279fda932dfa8c4305",
+      "run2": "098a4fb1d13aa0b941ccf5aabc95f51fedf9b6979cbf95279fda932dfa8c4305",
+      "match": true
+    },
+    "ground_truth.json": {
+      "run1": "9e122c566f3478c889cde36ff2867b2ad06bb9c9363372dc8be58fa28ac8612c",
+      "run2": "9e122c566f3478c889cde36ff2867b2ad06bb9c9363372dc8be58fa28ac8612c",
+      "match": true
+    },
+    "json/appeal.json": {
+      "run1": "31e1137879209a99debf22934db66680054f2b4d5bfc35d82d9ac1873e40580b",
+      "run2": "31e1137879209a99debf22934db66680054f2b4d5bfc35d82d9ac1873e40580b",
+      "match": true
+    },
+    "json/assignment.json": {
+      "run1": "e7d5ae4b38fa6b9165250d4dbcb696aea2a665de6d165691b8612ba88f459ef2",
+      "run2": "e7d5ae4b38fa6b9165250d4dbcb696aea2a665de6d165691b8612ba88f459ef2",
+      "match": true
+    },
+    "json/course.json": {
+      "run1": "d78bcea10c5dad29bf2b842aede8d48032a1c44b8b11fcda9255440a1f4781a2",
+      "run2": "d78bcea10c5dad29bf2b842aede8d48032a1c44b8b11fcda9255440a1f4781a2",
+      "match": true
+    },
+    "json/enrollment.json": {
+      "run1": "59500e62e50df498bacd42a56f808b0a1c9e4330abba05481eadd478b7817c8b",
+      "run2": "59500e62e50df498bacd42a56f808b0a1c9e4330abba05481eadd478b7817c8b",
+      "match": true
+    },
+    "json/feedback.json": {
+      "run1": "d1adf4a53fd94796999a20ba4257d2e2c691598b153e6defdaa1f7ef85d2ec02",
+      "run2": "d1adf4a53fd94796999a20ba4257d2e2c691598b153e6defdaa1f7ef85d2ec02",
+      "match": true
+    },
+    "json/grade.json": {
+      "run1": "3293f2996f3b54d0c122d9345819415766758b875a9913ccc0b6f60a36c70351",
+      "run2": "3293f2996f3b54d0c122d9345819415766758b875a9913ccc0b6f60a36c70351",
+      "match": true
+    },
+    "json/grade_criterion_score.json": {
+      "run1": "4b88ab9367cbec8470ba476d8a62acad229bdb7f58cde3ce8d1978d4346349b3",
+      "run2": "4b88ab9367cbec8470ba476d8a62acad229bdb7f58cde3ce8d1978d4346349b3",
+      "match": true
+    },
+    "json/grade_event.json": {
+      "run1": "944a43049697f4b263b52d51dd052dfed00857946a9b7f722172dc4a7312f0a2",
+      "run2": "944a43049697f4b263b52d51dd052dfed00857946a9b7f722172dc4a7312f0a2",
+      "match": true
+    },
+    "json/learner.json": {
+      "run1": "ccf689d4b89dc443085519ac79144fefd150184ae6e62f5cd20a72f53fc4da3f",
+      "run2": "ccf689d4b89dc443085519ac79144fefd150184ae6e62f5cd20a72f53fc4da3f",
+      "match": true
+    },
+    "json/resubmission.json": {
+      "run1": "316696e3393b2f611ba1861e852926a3a6e9e38cdf356615e0ce99127a1a013e",
+      "run2": "316696e3393b2f611ba1861e852926a3a6e9e38cdf356615e0ce99127a1a013e",
+      "match": true
+    },
+    "json/rubric.json": {
+      "run1": "50b5462d69a094ab6f4166964cf739c13b9dcfe7483e4a95f771b5d90867978e",
+      "run2": "50b5462d69a094ab6f4166964cf739c13b9dcfe7483e4a95f771b5d90867978e",
+      "match": true
+    },
+    "json/rubric_criterion.json": {
+      "run1": "c23e185e4bbf8a61fe61254edda0a7bfa2644e88ed39fe52ecf7c2f1fa6e047e",
+      "run2": "c23e185e4bbf8a61fe61254edda0a7bfa2644e88ed39fe52ecf7c2f1fa6e047e",
+      "match": true
+    },
+    "json/submission.json": {
+      "run1": "929de78b47859e4489597568ca36bc41b4f4894647af902937a8074b6f4aad87",
+      "run2": "929de78b47859e4489597568ca36bc41b4f4894647af902937a8074b6f4aad87",
+      "match": true
+    },
+    "json/submission_artifact.json": {
+      "run1": "4893580d231f8dc0a104830441cd3965dd16f67a5a8d88cce23cdd2d7cca26e4",
+      "run2": "4893580d231f8dc0a104830441cd3965dd16f67a5a8d88cce23cdd2d7cca26e4",
+      "match": true
+    },
+    "sql/seed.sql": {
+      "run1": "45bfeab79688199cc303bbf85fc3d7b2f52cd091583df5bec8714cc8ddae41b3",
+      "run2": "45bfeab79688199cc303bbf85fc3d7b2f52cd091583df5bec8714cc8ddae41b3",
+      "match": true
+    }
+  }
+}

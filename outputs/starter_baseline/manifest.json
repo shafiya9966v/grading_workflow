@@ -1,0 +1,143 @@
+{
+  "seed": 20261022,
+  "scale": "starter",
+  "variant": "baseline",
+  "generator_command": "python generator/generate.py --seed 20261022 --scale starter",
+  "as_of_utc": "2026-10-15T00:00:00Z",
+  "external_data": "none (fully synthetic)",
+  "row_counts": {
+    "course": 20,
+    "learner": 300,
+    "enrollment": 506,
+    "assignment": 50,
+    "rubric": 50,
+    "rubric_criterion": 200,
+    "submission": 797,
+    "resubmission": 86,
+    "submission_artifact": 1279,
+    "grade": 797,
+    "grade_criterion_score": 3202,
+    "feedback": 2117,
+    "appeal": 23,
+    "grade_event": 875
+  },
+  "anomalies_injected": {},
+  "files": {
+    "csv/appeal.csv": {
+      "bytes": 5879,
+      "sha256": "8212d9913d23bc12c6bcda49a4481fbf6318aee58833eeab702e8a00a1adea75"
+    },
+    "csv/assignment.csv": {
+      "bytes": 5909,
+      "sha256": "082694b61c9e7c28a26ca06ec8aa7a00376bd744629b063c8626870926fddfa7"
+    },
+    "csv/course.csv": {
+      "bytes": 1897,
+      "sha256": "d506fed8e25c6296cfc1cd00a828783a436fdbba4dcd197fba3d0e7269a52c43"
+    },
+    "csv/enrollment.csv": {
+      "bytes": 42722,
+      "sha256": "3b9e867c44ec9528441d860a4528ce12c4c1f92f9545c2813a0381b902d7ff35"
+    },
+    "csv/feedback.csv": {
+      "bytes": 381297,
+      "sha256": "3006a4877f54d86b5e2241b8c21f6b77410a34a4815751fd1723cdda6753c83a"
+    },
+    "csv/grade.csv": {
+      "bytes": 100699,
+      "sha256": "066f1de8956f11b23e22501c23f27d855e582fbe40edee6f72d529c30f3714be"
+    },
+    "csv/grade_criterion_score.csv": {
+      "bytes": 223070,
+      "sha256": "dcad7dac6f40c107191497066ec61bcf2511a10f8ce94e511cfceee7b0ae5143"
+    },
+    "csv/grade_event.csv": {
+      "bytes": 122583,
+      "sha256": "4e6b4ad6780bddb2a7a7257483c2f0dc1ee5551526fca610075b20877df28940"
+    },
+    "csv/learner.csv": {
+      "bytes": 23393,
+      "sha256": "4a3f2820591bdbee4149091294de8813f89caea96967fc254b52126491456b53"
+    },
+    "csv/resubmission.csv": {
+      "bytes": 10582,
+      "sha256": "13df99cd5a0fbd5fcc19a5e7e884e94b2d410a38386810961c96dc3e2f199119"
+    },
+    "csv/rubric.csv": {
+      "bytes": 3456,
+      "sha256": "66753ac947c4f77c5a2827fcf05a14c57ffb77ecbb83a43ac15ddce7fcca514f"
+    },
+    "csv/rubric_criterion.csv": {
+      "bytes": 13660,
+      "sha256": "32b5f984cb129561ad348b1eee1179b3bbf3d431e0ae0848ae27b4a6c9dfa024"
+    },
+    "csv/submission.csv": {
+      "bytes": 80187,
+      "sha256": "57b8cfec9f064ee5a203717d0fc43dc4d40e97e1f44324ff6d222fc48f86eb5c"
+    },
+    "csv/submission_artifact.csv": {
+      "bytes": 275913,
+      "sha256": "56885b7245ebef07d0b102553f7155d2d12a70a88e5cd53c74eadbba056affeb"
+    },
+    "json/appeal.json": {
+      "bytes": 9658,
+      "sha256": "31e1137879209a99debf22934db66680054f2b4d5bfc35d82d9ac1873e40580b"
+    },
+    "json/assignment.json": {
+      "bytes": 12951,
+      "sha256": "e7d5ae4b38fa6b9165250d4dbcb696aea2a665de6d165691b8612ba88f459ef2"
+    },
+    "json/course.json": {
+      "bytes": 3828,
+      "sha256": "d78bcea10c5dad29bf2b842aede8d48032a1c44b8b11fcda9255440a1f4781a2"
+    },
+    "json/enrollment.json": {
+      "bytes": 90343,
+      "sha256": "59500e62e50df498bacd42a56f808b0a1c9e4330abba05481eadd478b7817c8b"
+    },
+    "json/feedback.json": {
+      "bytes": 592568,
+      "sha256": "95dcb79f2f3a40c81d44925fc7379d9a0608239873b5b78a45a5e745d19170c3"
+    },
+    "json/grade.json": {
+      "bytes": 214558,
+      "sha256": "f3b8ec35c3722afd8cd32df75d9ce12d4880ad84b32433cef8efaf40c66dbbb3"
+    },
+    "json/grade_criterion_score.json": {
+      "bytes": 351123,
+      "sha256": "a38f558862c22666aa5bb326e80b8e1edeff8c18a2e6fdeb43c4675494accd88"
+    },
+    "json/grade_event.json": {
+      "bytes": 267250,
+      "sha256": "e25fcb47777d0477fb3173db0a851e09060ed5cfeaa619f094247aef067b72d2"
+    },
+    "json/learner.json": {
+      "bytes": 44645,
+      "sha256": "ccf689d4b89dc443085519ac79144fefd150184ae6e62f5cd20a72f53fc4da3f"
+    },
+    "json/resubmission.json": {
+      "bytes": 18528,
+      "sha256": "316696e3393b2f611ba1861e852926a3a6e9e38cdf356615e0ce99127a1a013e"
+    },
+    "json/rubric.json": {
+      "bytes": 7787,
+      "sha256": "50b5462d69a094ab6f4166964cf739c13b9dcfe7483e4a95f771b5d90867978e"
+    },
+    "json/rubric_criterion.json": {
+      "bytes": 27609,
+      "sha256": "c23e185e4bbf8a61fe61254edda0a7bfa2644e88ed39fe52ecf7c2f1fa6e047e"
+    },
+    "json/submission.json": {
+      "bytes": 176532,
+      "sha256": "4bdd366580e7dde0abe807a828e6f27d82a0f9adedfee0002ec92c6f125ba7ae"
+    },
+    "json/submission_artifact.json": {
+      "bytes": 468836,
+      "sha256": "d40f318b8fdfc1c0a97a604273b2cd35b2386743269b02bd3d0344ab9f141fd1"
+    },
+    "sql/seed.sql": {
+      "bytes": 1501290,
+      "sha256": "bae16c342b43d27bfb97f833750e6f20edae635d6b7b3a5a1f896b67f2187583"
+    }
+  }
+}

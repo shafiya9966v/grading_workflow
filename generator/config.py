@@ -77,10 +77,28 @@ APPEAL_UPHOLD_MARGIN_PCT = 5      # upheld if review score is this % of max (or 
 # ---------------------------------------------------------------- behaviour rates
 # These only decide *who* does something. What happens next follows the rules above.
 LATE_RATE = 0.15                  # share of submissions made after the deadline
-MISSING_FILE_RATE = 0.03          # share of submissions with no readable file
-UNGRADED_RATE = 0.05              # share of recent submissions not graded yet
+MISSING_FILE_RATE = 0.03          # share of submissions with no files at all
 RESUBMIT_RATE_WHEN_ELIGIBLE = 0.50
 APPEAL_RATE = 0.06                # share of graded submissions that file an appeal
+
+# Submission / grading behaviour (used by transactions.py)
+LATE_MAX_DAYS = 7                 # latest a late submission can arrive after the deadline
+BOUNDARY_RATE = 0.01              # share of submissions placed exactly at / 1 second after the deadline
+CORRUPT_FILE_RATE = 0.01          # share of uploaded files that are corrupt
+ARTIFACTS_PER_SUBMISSION = {1: 0.60, 2: 0.30, 3: 0.10}          # files per submission
+FILE_TYPES = {"pdf": 0.35, "zip": 0.25, "py": 0.20, "ipynb": 0.15, "txt": 0.05}
+QUALITY_BETA = (5, 2)             # underlying work quality (0 to 1), mean about 0.71
+GRADER_NOISE_SD = 0.08            # how far a grader's score drifts from the true quality
+GRADING_DELAY_DAYS = (1, 10)      # days between submission and grade release
+
+# Resubmission / appeal behaviour (used by lifecycle.py)
+RESUBMIT_CANCEL_RATE = 0.05           # share of requested resubmissions the learner cancels
+RESUBMIT_IMPROVEMENT = (-0.05, 0.30)  # change in underlying quality after a resubmission
+RESUBMIT_PREP_MAX_DAYS = 5            # days between the request and the new upload (max)
+RESUBMIT_REGRADE_DAYS = (1, 7)        # days to regrade a resubmission
+APPEAL_RATE_MULTIPLIER = ((50, 2.0), (70, 1.0), (101, 0.3))  # (score below this % of max, multiplier on APPEAL_RATE)
+APPEAL_DECISION_DAYS = (2, 10)        # days to decide an appeal
+REVIEWER_NOISE_SD = 0.04              # second reviewer is more precise than the first grader
 
 
 def get_scale(name: str) -> Scale:
